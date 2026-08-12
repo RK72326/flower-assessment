@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>あなたに似合う花診断</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="flower-ases.css">
+</head>
+<body>
+
+  <div class="container">
+    <!-- 1.スタート画面 -->
+    <div id="start-screen" class="screen">
+      <h1>あなたに似合う花診断</h1>
+      <p>簡単な5つの質問に答えて、あなたにぴったりの花を見つけましょう!</p>
+      <button id="start-btn" class="btn">診断開始</button>
+    </div>
+
+    <!-- 2.質問画面 -->
+    <div id="quiz-screen" class="screen hide">
+      <p id="quiz-number" class="step">第 1 問</p>
+      <h2 id="quiz-text">★ここに質問文</h2>
+      <div id="options-container" class="options">
+        <!-- 選択肢ボタンは JS にて -->
+      </div>
+    </div>
+
+    <!-- 3.結果画面 -->
+    <div id="result-screen" class="screen hide">
+      <p class="result-text">あなたに似合う花は...</p>
+      <h2 id="flower-name">花の名前</h2>
+      <p id="flower-meaning" class="meaning">花言葉：○○</p>
+      <p id="flower-desc" class="description">★ここに説明文が入ります。</p>
+
+      <div id="tweet-area"></div>
+
+      <button id="restart-btn" class="btn">もう一度診断する</button>
+    </div>
+  </div>
+
+  <script src="flower-ases.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,63 @@
+body {
+  font-family: "Yusei Magic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  background-color: #fce4ec;  /* 背景を優しいピンク色に */
+  color: #333;                /* 文字の色を濃いグレーに */
+  display: flex;                /* 真ん中寄せのための指定 */
+  justify-content: center;      /* 左右の真ん中に寄せる */
+  align-items: center;          /* 上下の真ん中に寄せる */
+  min-height: 100vh;            /* 画面の高さいっぱいを使う */
+  margin: 0;                    /* 余計なすき間をなくす */
+}
+
+.container {
+  background-color: #ffffff;                 /* 背景は白 */
+  padding: 30px;                             /* 内側に30pxの余白をつくる */
+  border-radius: 16px;                       /* 角を丸くする */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);  /* ほんのり影をつける */
+  width: 90%;                                /* 幅は画面の90% */
+  max-width: 400px;                          /* ただし最大でも400pxまで */
+  text-align: center;                        /* 文字やボタンを中央揃えに */
+}
+
+.hide {
+  display: none;
+}
+
+.btn {
+  background-color: #ff459c; /* ボタンの背景色（濃いピンク） */
+  color: white;              /* ボタンの文字色（白） */
+  border: none;               /* ボタンの周りの枠線を消す */
+  padding: 12px 24px;         /* ボタンの中の余白*/
+  font-size: 1rem;            /* 文字の大きさ */
+  border-radius: 25px;        /* ボタンの角を丸く */
+  cursor: pointer;            /* マウスを乗せたときに「指マーク」にする */
+  transition: background-color 0.3s; /* 色が変わるときのアニメーション */
+  width: 100%;                /* 幅いっぱいに広げる */
+}
+
+.btn:hover {
+  background-color: #d1367f; /* 少し濃いピンクに変わる */
+}
+
+.options {
+  display: flex;
+  flex-direction: column; /* 選択肢ボタンを縦一列に並べる */
+  gap: 10px;              /* ボタン同士のすき間を10px空ける */
+}
+
+.description {
+  text-align: left;           /* 説明文は左揃えにして読みやすく */
+  font-size: 0.95rem;
+  background-color: #fff8fa;  /* 薄いピンクの背景枠をつける */
+  padding: 15px;              /* 内側に余白 */
+  border-radius: 8px;         /* 角を少し丸く */
+  border: 1px solid #f8bbd0;  /* 薄いピンクの枠線 */
+}
+
+/* ツイートエリアの余白 */
+#tweet-area {
+  margin: 20px 0 10px;
+}
